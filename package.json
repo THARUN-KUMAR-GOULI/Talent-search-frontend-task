@@ -2,7 +2,7 @@
   "name": "talent-search-frontend-task",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tharun-kumar.github.io/talent-search-task",
+  "homepage": "https://tharun-kumar-gouli.github.io/Talent-search-frontend-task",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -40,5 +40,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://cdn.drcode.ai"
+  "proxy": "https://cdn.drcode.ai",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }
