@@ -1,0 +1,13 @@
+.filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+select {
+    padding: 5px;
+}
+
+button {
+    padding: 5px;
+}

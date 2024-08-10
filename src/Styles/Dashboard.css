@@ -1,0 +1,16 @@
+body {
+    margin-left: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.search-filter {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}

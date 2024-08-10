@@ -1,0 +1,11 @@
+.pagination {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+button:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+}
