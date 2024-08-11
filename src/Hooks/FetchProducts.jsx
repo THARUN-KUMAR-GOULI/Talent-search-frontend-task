@@ -5,12 +5,21 @@ const FetchProducts = () => {
 
     const [products, setProducts] = useState([]);
     const [error, setError] = useState(null);
+    const ApiUrl = process.env.REACT_APP_API_URL;
 
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const res = await axios.get('../api/proxy.js');
+                const res = await axios.get(ApiUrl);
+
+                if (!res.data || !res.data.products) {
+                    throw new Error('Invalid Data structure from API');
+                }
                 const productData = res.data.products;
+
+                if (!productData) {
+                    throw new Error('Product data is not available');
+                }
 
                 const productArray = Object.keys(productData).map(key => ({
                     id: key,
