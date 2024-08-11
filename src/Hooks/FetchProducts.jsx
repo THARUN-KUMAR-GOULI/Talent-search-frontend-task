@@ -5,7 +5,7 @@ const FetchProducts = () => {
 
     const [products, setProducts] = useState([]);
     const [error, setError] = useState(null);
-    const ApiUrl = '/src/api/proxy.js';
+    const ApiUrl = 'https://cdn.drcode.ai/interview-materials/products.json';
 
     useEffect(() => {
         const fetchProducts = async () => {
