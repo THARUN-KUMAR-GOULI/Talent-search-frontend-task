@@ -9,7 +9,8 @@ const FetchProducts = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const res = await axios.get(process.env.REACT_API_URL);
+                // eslint-disable-next-line no-undef
+                const res = await axios.get(ApiUrl);
                 const productData = res.data.products;
 
                 const productArray = Object.keys(productData).map(key => ({
