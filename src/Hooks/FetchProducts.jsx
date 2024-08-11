@@ -5,13 +5,11 @@ const FetchProducts = () => {
 
     const [products, setProducts] = useState([]);
     const [error, setError] = useState(null);
-    const ApiUrl = process.env.REACT_APP_API_URL;
 
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-
-                const res = await axios.get(ApiUrl);
+                const res = await axios.get('/src/api/proxy.js');
                 const productData = res.data.products;
 
                 const productArray = Object.keys(productData).map(key => ({
