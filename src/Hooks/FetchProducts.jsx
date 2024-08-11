@@ -5,7 +5,7 @@ const FetchProducts = () => {
 
     const [products, setProducts] = useState([]);
     const [error, setError] = useState(null);
-    const ApiUrl = process.env.REACT_APP_API_URL;
+    const ApiUrl = '/src/api/proxy.js';
 
     useEffect(() => {
         const fetchProducts = async () => {
