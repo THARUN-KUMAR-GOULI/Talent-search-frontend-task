@@ -9,7 +9,7 @@ const FetchProducts = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const res = await axios.get('/src/api/proxy.js');
+                const res = await axios.get('../api/proxy.js');
                 const productData = res.data.products;
 
                 const productArray = Object.keys(productData).map(key => ({
