@@ -5,11 +5,12 @@ const FetchProducts = () => {
 
     const [products, setProducts] = useState([]);
     const [error, setError] = useState(null);
+    const ApiUrl = process.env.REACT_APP_API_URL;
 
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                // eslint-disable-next-line no-undef
+
                 const res = await axios.get(ApiUrl);
                 const productData = res.data.products;
 
