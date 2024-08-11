@@ -39,7 +39,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://cdn.drcode.ai",
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }

@@ -9,7 +9,7 @@ const FetchProducts = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const res = await axios.get('/interview-materials/products.json');
+                const res = await axios.get(process.env.REACT_API_URL);
                 const productData = res.data.products;
 
                 const productArray = Object.keys(productData).map(key => ({
